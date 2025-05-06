@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combine File Excel</title>
+</head>
+<body>
+    <h1>Unggah Folder Berisi File Excel</h1>
+    <form method="POST" action="/combine" enctype="multipart/form-data">
+        <input type="file" name="excel_files" webkitdirectory directory multiple required><br><br>
+        <label for="output_filename">Nama File Hasil:</label>
+        <input type="text" id="output_filename" name="output_filename" value="Combined_Data.xlsx"><br><br>
+        <input type="submit" value="Combine">
+    </form>
+
+    {% if download_link %}
+    <h2>File Berhasil Digabungkan!</h2>
+    <p><a href="{{ download_link }}" download="{{ output_filename }}">Klik di sini untuk mengunduh {{ output_filename }}</a></p>
+    {% endif %}
+
+    {% if error %}
+    <p style="color: red;">Error: {{ error }}</p>
+    {% endif %}
+</body>
+</html>
