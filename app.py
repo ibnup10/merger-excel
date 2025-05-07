@@ -80,6 +80,6 @@ if st.button("Gabungkan"):
                 )
 
 st.divider()
-st.markdown("<p style='text-align: center;'>Made with ♥ By Ibnu Pangestu</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>Made with ♥ By Ibnu P</p>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>May 2025</p>", unsafe_allow_html=True)
     
