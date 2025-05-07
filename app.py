@@ -4,6 +4,9 @@ import streamlit as st
 from io import BytesIO
 import tempfile
 
+# Konfigurasi halaman Streamlit
+st.set_page_config(page_title='Combiner Excel - EDII', layout='wide')
+
 def combine_excel_sheets(file_list):
     """
     Menggabungkan semua sheet dari berbagai file Excel dalam satu file Excel baru.
